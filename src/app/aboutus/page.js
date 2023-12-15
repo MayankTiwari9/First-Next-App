@@ -14,10 +14,9 @@ const AboutUs = () => {
       {details.map((detail) => {
         return (
           <Link href={`/aboutus/${detail.id}`}>
-            <ul key={detail.id}>
-              <li>{detail.name}</li>
-              <li>{detail.role}</li>
-            </ul>
+            <div key={detail.id}>
+              <h3>{detail.name}</h3>
+            </div>
           </Link>
         );
       })}
